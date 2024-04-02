@@ -46,7 +46,7 @@ const ProductDetail = () => {
       if (alertElement) {
         setTimeout(() => {
           alertElement.classList.add('slideOut');
-        }, 1500);
+        }, 1501);
       }
     }
   }, [showAlert]);
