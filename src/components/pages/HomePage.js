@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../molecules/Footer";
 import Header from "../molecules/Header";
-import CardHome from "../molecules/cardHome";
+import CardHome from "../molecules/ContentHome3";
 import products from "../atoms/products/Products";
-import ImageHome from "../molecules/ImageHome";
+import ImageHome from "../molecules/ContentHome1";
 import "./_homepage.styles.scss";
-import ImageSecondHome from "../molecules/ImageSecondHome";
+import ImageSecondHome from "../molecules/ContentHome2";
 
 function HomePage() {
   const [isCardVisible, setIsCardVisible] = useState(false);
