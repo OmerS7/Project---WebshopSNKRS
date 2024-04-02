@@ -1,0 +1,171 @@
+.containerModel1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -100000;
+
+  .model1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 440px;
+      transform: translate(-10000px);
+  }
+
+  .model2 {
+      display: flex;
+      margin-top: 300px;
+      margin-left: 50px;
+      width: 260px;
+      transform: translate(-10000px);
+  }
+
+  .model3 {
+      display: flex;
+      margin-top: 400px;
+      margin-right: 80px;
+      width: 220px;
+      transform: translate(-10000px);
+  }
+
+  .model4 {
+    display: flex;
+    // position: relative; /* Verander de positie naar relatief */
+    margin-bottom: 300px;
+    // margin-right: 0; /* Verwijder de grote margin-right */
+    width: 180px;
+    transform: translate(-10000px);
+}
+}
+
+@keyframes slideIn1 {
+  0% {
+      opacity: 0;
+      transform: translate(-100%, 100%) rotate(90deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes slideIn2 {
+  0% {
+      opacity: 0;
+      transform: translate(-100%, -100%) rotate(90deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes slideIn3 {
+  0% {
+      opacity: 0;
+      transform: translate(100%, 100%) rotate(90deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotate(0);
+      transform-origin: 0;
+  }
+}
+
+@keyframes slideIn4 {
+  0% {
+      opacity: 0;
+      transform: translate(100%, -100%) rotate(90deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotate(0);
+      transform-origin: 0;
+  }
+}
+
+.containerModel1.animate-image .model1 {
+  animation: slideIn1 0.9s ease-in-out 0.5s forwards;
+}
+
+.containerModel1.animate-image .model2 {
+  animation: slideIn2 1.5s ease-in-out 0.4s forwards;
+}
+
+.containerModel1.animate-image .model3 {
+  animation: slideIn3 1.5s ease-in-out 0.5s forwards;
+  transform-origin: bottom right;
+}
+
+.containerModel1.animate-image .model4 {
+  animation: slideIn4 1s ease-in-out 0.3s forwards;
+}
+
+@media (max-width: 480px) {
+  .containerModel1 .model1,
+  .containerModel1 .model2,
+  .containerModel1 .model3
+  {
+      width: 100%;
+      // margin: 0;
+      transform: translateX(0);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .containerModel1 .model1,
+  .containerModel1 .model2,
+  .containerModel1 .model3
+  {
+      width: 100%;
+      transform: translateX(0);
+  }
+
+  .containerModel1 .model1 {
+    width: 180px;
+    margin-right: -50px;
+  }
+
+  .containerModel1 .model2 {
+    width: 80px;
+    margin-right: -50px;
+  }
+
+  .containerModel1 .model3 {
+    width: 120px;
+    margin-right: -50px;
+    margin-bottom: -100px;
+  }
+  
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .containerModel1 .model1,
+  .containerModel1 .model2,
+  .containerModel1 .model3
+  {
+      width: 100%;
+      transform: translateX(0);
+  }
+
+  .containerModel1 .model1 {
+    width: 180px;
+    margin-right: -50px;
+  }
+
+  .containerModel1 .model2 {
+    width: 140px;
+    margin-right: -50px;
+  }
+
+  .containerModel1 .model3 {
+    width: 220px;
+    margin-right: -50px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1201px) {
+}

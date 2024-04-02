@@ -35,20 +35,43 @@
           color: inherit;
         }
     }
-}
 
-.menu-Icons{
-    display: flex;
-    font-size: 30px;
-    cursor: pointer;
-    margin-top: 100px;
-    margin-left: 20px;
 
-    .insta, .youtube, .tiktok{
-        margin-right: 30px;
+    .menu-Icons{
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+        margin-top: 100px;
+        margin-left: 20px;
 
-        &:hover{
-            color: black;
+        .insta, .youtube, .tiktok{
+            margin-right: 30px;
+
+            &:hover{
+                color: black;
+            }
         }
     }
+
+    @media (max-width: 480px) {
+      }
+    
+      // Media Query for Medium Screens (min-width: 481px) and (max-width: 768px)
+      @media (min-width: 481px) and (max-width: 768px) {
+      }
+    
+      @media (max-width: 580px) {
+      }
+    
+      // Media Query for Large Screens (min-width: 769px) and (max-width: 1024px)
+      @media (min-width: 769px) and (max-width: 1024px) {
+      }
+    
+      // Media Query for Extra Large Screens (min-width: 1025px) and (max-width: 1200px)
+      @media (min-width: 1025px) and (max-width: 1200px) {
+      }
+    
+      // Media Query for Ultra High-Resolution Screens (min-width: 1201px)
+      @media (min-width: 1201px) {
+      }
 }
