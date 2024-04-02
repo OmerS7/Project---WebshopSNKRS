@@ -9,8 +9,7 @@ function Menu() {
             <ul>
                 <li><Link to="/shop">Shop</Link></li>
                 <li><Link to="/about">Info</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/test">TestPage</Link></li>
+                {/* <li><Link to="/contact">Contact</Link></li> */}
                 <div className='menu-Icons'>
                     <div className='insta'>
                         <FontAwesomeIcon icon={faInstagram} />
