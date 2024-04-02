@@ -1,0 +1,23 @@
+.shoppingbag {
+    width: 17px;
+    color: white !important;  
+    text-decoration: none;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cart-counter {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: rgb(143, 137, 137);
+    color: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

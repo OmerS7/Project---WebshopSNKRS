@@ -1,0 +1,41 @@
+.content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .logo9{
+        height: 400px;
+    }
+
+    .contentFirst {
+        display: flex;
+        align-items: center;
+        color: white;
+        width: 900px;
+        margin-left: 50px;
+        margin-top: -300px;
+    }
+
+   
+    
+}
+
+.content4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -300px;
+
+    .contentSecond {
+        display: flex;
+        align-items: center;
+        width: 900px;
+        color: white;
+    }
+
+    .logo9{
+        height: 600px;
+        margin-top: -200px;
+    }
+}

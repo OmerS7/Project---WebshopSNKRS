@@ -1,0 +1,40 @@
+@import 'variables';
+
+.navBar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    box-shadow: $shadow;
+    transition: top 0.3s; 
+
+    .leftSideNav{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .midSecNav {
+        position: absolute; 
+        left: 48%; 
+        transform: translateX(-50%);
+        top: 58%;
+        transform: translateY(-50%); 
+    }
+
+    .rightSecNav {
+        margin-top: 5px;
+        z-index: 20;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .navBar {
+            position: static; 
+            flex-direction: column; 
+            align-items: center; 
+            height: auto; 
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+@import 'variables';
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    color: $color-white;
+    height: 100px;
+    padding: 20px;
+    box-shadow: $shadow;
+
+    .footerSocials{
+        display: flex;
+        font-size: 25px;
+        margin-right: 70px;
+
+        .insta, .youtube, .tiktok{
+            margin-right: 10px;
+    
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
