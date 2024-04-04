@@ -1,77 +1,55 @@
-.menu-screen{
+.menu-screen {
     position: fixed;
     display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60%;
     color: white;
     background-color: #2B2B2B;
-    z-index: -1;
+    box-shadow: 0px 0px 3px #00000080;
+    z-index: 9999; /* Verhoog de z-index om ervoor te zorgen dat het menu boven andere elementen wordt weergegeven */
+}
 
-    &.menu-screen ul{
-        list-style: none;
-        font-size: 50px;
-        margin-top: 120px;
-        margin-left: 150px ;
-    }
+.menu-screen ul {
+    list-style: none;
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 150px;
+}
 
-    &.menu-screen li{
-        margin-bottom: 50px;
-        padding-left: 10px;
-        cursor: pointer;
+.menu-screen li {
+    margin-bottom: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+}
 
-        &:hover {
-            background: linear-gradient(to right, rgba(64, 64, 64, 0.5), transparent );
-            width: 1000px;
-        }
-    }
+.menu-screen li:hover {
+    background: linear-gradient(to right, rgba(64, 64, 64, 0.5), transparent);
+    width: 1000px;
+}
 
-    a {
-        text-decoration: none;
-        color: inherit;
-  
-        &:visited {
-          color: inherit;
-        }
-    }
+.menu-screen a {
+    text-decoration: none;
+    color: inherit;
+}
 
+.menu-Icons {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 20px;
+}
 
-    .menu-Icons{
-        display: flex;
-        font-size: 30px;
-        cursor: pointer;
-        margin-top: 100px;
-        margin-left: 20px;
+.menu-Icons .insta,
+.menu-Icons .youtube,
+.menu-Icons .tiktok {
+    margin-right: 30px;
+}
 
-        .insta, .youtube, .tiktok{
-            margin-right: 30px;
-
-            &:hover{
-                color: black;
-            }
-        }
-    }
-
-    @media (max-width: 480px) {
-      }
-    
-      // Media Query for Medium Screens (min-width: 481px) and (max-width: 768px)
-      @media (min-width: 481px) and (max-width: 768px) {
-      }
-    
-      @media (max-width: 580px) {
-      }
-    
-      // Media Query for Large Screens (min-width: 769px) and (max-width: 1024px)
-      @media (min-width: 769px) and (max-width: 1024px) {
-      }
-    
-      // Media Query for Extra Large Screens (min-width: 1025px) and (max-width: 1200px)
-      @media (min-width: 1025px) and (max-width: 1200px) {
-      }
-    
-      // Media Query for Ultra High-Resolution Screens (min-width: 1201px)
-      @media (min-width: 1201px) {
-      }
+.menu-Icons .insta:hover,
+.menu-Icons .youtube:hover,
+.menu-Icons .tiktok:hover {
+    color: black;
 }

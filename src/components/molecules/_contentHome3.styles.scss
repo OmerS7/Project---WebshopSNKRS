@@ -1,28 +1,16 @@
-.content {
+.content-home {
     display: flex;
-    justify-content: center;
-    margin-top: -90px;
-    padding: 100px;
-}
-
-.contentTwo {
-    margin-bottom: 200px;
-    display: flex;
-    justify-content: center;
-}
-
-.cardContent {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-right: 70px;
-
-    p {
-        font-size: 50px;
-    }
-}
-
-.card {
+    // padding: 100px;
+    // margin-top: 50px;
+    margin-top: -100px;
+    z-index: -100;
+  }
+  
+  .card {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #000000;
@@ -30,139 +18,69 @@
     box-shadow: 0px 0px 3px #00000080;
     min-width: 100vw;
     height: 500px;
-}
-
-.card .shoe {
-    width: 410px;
-    margin-bottom: 70px;
-}
-
-.card .shoeName {
-    margin-top: -80px;
-    font-weight: bold;
-}
-
-.card .price {
-    margin-left: 250px;
-}
-
-.card .buttonPlus {
+  
+    .shoe {
+      width: 410px;
+      margin-bottom: 70px;
+    }
+  
+    .feel, .heat {
+      font-size: 50px;
+    }
+  }
+  
+  
+  .content-below {
     display: flex;
-    justify-content: center;
-}
-
-.card .buttonPlus Button {
-    color: white;
-    font-size: 20px;
-}
-
-.card .buttonPlus Button:hover {
-    background-color: white;
-    color: black;
-    border: none;
-}
-
-.alert {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0%;
-    left: -220px;
-    transform: translateY(-0%);
-    color: white;
-    background-color: gray;
-    border-radius: 10px;
-    height: 100px;
-    width: 200px;
-    padding: 10px;
-    animation: slideIn 0.5s forwards;
-}
-
-.alert img {
-    max-height: 150px;
-}
-
-@keyframes slideIn {
-    from {
-        left: -220px;
-    }
-    to {
-        left: 20px;
-    }
-}
-
-.alert.slideOut {
-    animation: slideOut 0.5s forwards;
-}
-
-@keyframes slideOut {
-    from {
-        left: 20px;
-    }
-    to {
-        left: -220px;
-    }
-}
-
-.z-index {
-    z-index: -100000;
-}
-
-.contentBelow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: -250px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.textUnder {
-    color: white;
-}
-
-.buttonShop a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Media queries */
-
-@media (max-width: 480px) {
-    .content {
-        padding: 20px;
+  
+    .textUnder {
+      color: white;
     }
-
+  
+    .button-shop a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-home {
+      // padding: 20px;
+    }
+  
     .card {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .card .shoe {
+      height: auto;
+      text-align: center;
+  
+      .shoe {
         width: 80%;
         margin-bottom: 20px;
-    }
+      }
 
-    .card .price {
-        margin: 0;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .content {
-        padding: 50px;
-    }
-
-    .cardContent .feel{ 
+      .feel, .heat{
         font-size: 30px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+      }
 
-    .card .shoe {
-        width: 70%;
     }
-}
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .content-home {
+      padding: 50px;
+    }
+  
+    .card .feel {
+      font-size: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .card .shoe {
+      width: 70%;
+    }
+  }
