@@ -33,24 +33,22 @@ const ImageSecondHome = () => {
 
   const content = (
     <>
-    In the late 1980s and early 1990s, one man not only transformed the world
+    In the late 1980s and early 1990s, one man not only transformed the world of basketball
     <br />
-    of basketball but also revolutionized the sneaker industry. His name was 
+     but also revolutionized the sneaker industry. His name is  Michael Jordan, and his influence
     <br />
-    Michael Jordan, and his influence on both sports and popular culture was unparalleled.
+     on both sports and popular culture was unparalleled.
     <br /> <br />
-    With his unmatched athletic skills, charismatic personality, and unique style 
-    <br />
-    on and off the court, Jordan quickly became a global sensation. But it wasn't just his game that captivated people; it was also his sneakers.    
+    Jordan quickly became a global sensation. But it wasn't just his game that captivated people; it was also his SNKRS.    
     </>
   )
 
   return (
-    <div>
-      <div className="containerModel1">
+    <div className="background">
         <div className="textJordan">
           <Text content={content} />
          </div>
+      <div className="containerModel1">
         <Link to={`/productdetail/${products[17].id}`}>
           <PngImage src={Model3} alt={"Model shoe"} className="model3" />
         </Link>          
