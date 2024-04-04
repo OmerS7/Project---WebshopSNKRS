@@ -5,6 +5,7 @@ import ShadowLogo from '../styles/img/shadow-logo.png';
 import './_contentHome1.styles.scss';
 import PngImage from "../atoms/Images/Image";
 import Icon from "../atoms/Icons/Icon";
+import ArrowDown from "../styles/img/ArrowDown.svg";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 
 const ImageHome = () => {
@@ -37,7 +38,8 @@ const ImageHome = () => {
                 <PngImage src= { ShadowLogo } alt={ "shadow logo" } className="shadow" />
             </div>
             <div className={`iconArrowDown ${hideArrow ? 'hidden' : ''}`}>
-                <Icon icon={faArrowDownLong}  color="white" />
+                <PngImage src={ ArrowDown } />
+                {/* <Icon icon={faArrowDownLong}  color="white" /> */}
             </div>
         </div>
     );
