@@ -1,0 +1,78 @@
+.card10 {
+    display: flex;
+    justify-content: center;
+    // width: calc(50% - 20px); /* 50% van de beschikbare ruimte minus marges */
+    margin-bottom: 20px; /* Voeg ruimte toe tussen de kaarten */
+  }
+  
+  @media (min-width: 768px) {
+    .card10 {
+      width: calc(33.33% - 20px); /* Verdeel de rij in drie kolommen */
+    }
+  }
+  
+  .content10 {
+    margin-bottom: 40px;
+  }
+  
+  .cardContent10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 320px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: #8989893f;
+    box-shadow: 0px 0px 3px #00000080;
+    color: white;
+  
+    img {
+      max-width: 290px;
+      margin-left: 30px;
+      margin-top: -125px;
+      transition: transform 1s ease;
+  
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 1s ease;
+      }
+    }
+  
+    p {
+      margin-left: 30px;
+    }
+  
+    .price10 {
+      margin-top: -27px;
+    }
+  
+    @media (max-width: 1020px) {
+        height: 250px;
+        width: 280px;
+    
+        img {
+          max-width: 220px;
+          margin-top: -100px;
+        }
+      }
+    
+      @media (max-width: 520px) {
+        height: 200px; /* Maak de kaart nog kleiner */
+        width: 220px; /* Maak de kaart nog kleiner */
+    
+        img {
+          max-width: 160px; /* Maak de afbeelding nog kleiner */
+          margin-top: -75px; /* Pas de marges aan */
+        }
+    }
+
+      @media (max-width:480px){
+        height: 190px; /* Maak de kaart nog kleiner */
+        width: 210px; /* Maak de kaart nog kleiner */
+    
+        img {
+          max-width: 180px; /* Maak de afbeelding nog kleiner */
+          margin-top: -75px; /* Pas de marges aan */
+        }
+      }
+  }

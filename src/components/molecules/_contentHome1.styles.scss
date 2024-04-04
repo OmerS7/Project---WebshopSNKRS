@@ -9,11 +9,13 @@
     max-width: 100%;
     margin-bottom: 100px;
     margin-top: -100px;
-    z-index: -10000;
+    z-index: -2;
+    position: relative;
 
   .containerHome {
 
       .logo {
+          display: flex;
           position: absolute;
           // margin-left: 50px;
           width: 750px;
@@ -64,6 +66,10 @@
   }
 
   @media (max-width: 480px) {
+    margin-top: 50px;
+    margin-bottom: 240px; /* Grotere margin-bottom voor schermen van maximaal 480px */
+
+
       .containerHome .logo {
           width: 100%;
           margin-left: 0;
@@ -71,10 +77,11 @@
 
       .containerHome .shoe {
           width: 100%;
+          margin-bottom: 100px;
       }
 
       .containerHome .shadow {
-          margin-top: 0;
+          margin-top: 10;
           margin-left: 0;
       }
   }

@@ -13,7 +13,7 @@ footer{
     .footerSocials{
         display: flex;
         font-size: 25px;
-        margin-right: 70px;
+        // margin-right: 70px;
 
         .insta, .youtube, .tiktok{
             margin-right: 10px;
@@ -25,7 +25,7 @@ footer{
     }
 
 @media (max-width: 480px) {
-    font-size: 12px; // Adjusted font size for small screens (e.g., mobile)
+    font-size: 10px; // Adjusted font size for small screens (e.g., mobile)
     .footerSocials{
         font-size: 12px;
     }

@@ -52,3 +52,46 @@
       color: white;
     }
 }
+
+.alert {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: -220px;
+  transform: translateY(-0%);
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  animation: slideIn 0.5s forwards;
+  z-index: 200;
+
+  img {
+    max-height: 150px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: -220px;
+  }
+  to {
+    left: 20px;
+  }
+}
+
+.alert.slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    left: 20px;
+  }
+  to {
+    left: -220px;
+  }
+}

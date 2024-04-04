@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   z-index: -100000;
+  // position: relative;
 
   .model1 {
       display: flex;
@@ -107,8 +108,30 @@
   .containerModel1 .model3
   {
       width: 100%;
-      // margin: 0;
+      // margin: 10px;
       transform: translateX(0);
+  }
+
+  .containerModel1 .model1 {
+    width: 180px;
+    margin-right: -50px;
+  }
+
+  .containerModel1 .model2 {
+    width: 140px;
+    margin-right: -50px;
+  }
+
+  .containerModel1 .model3 {
+    width: 120px;
+    margin-left: 60px;
+    margin-right: -100px;
+    margin-bottom: -100px;
+  }
+
+  .containerModel1 .model4 {
+    margin-left: -100px;
+
   }
 }
 

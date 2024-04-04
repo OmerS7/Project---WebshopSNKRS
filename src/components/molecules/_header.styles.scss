@@ -28,16 +28,33 @@
         z-index: 20;
     }
 
-    // @media only screen and (max-width: 768px) {
-    //     .navBar {
-    //         position: static; 
-    //         flex-direction: column; 
-    //         align-items: center; 
-    //         height: auto; 
-    //     }
-    // }
+    .menuItems {
+        ul {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          color: white;
+          cursor: pointer;
+      
+          li {
+            font-size: 18px;
+            // font-weight: 900;
+            list-style: none;
+            padding-right: 10px;
+      
+            a {
+              text-decoration: none; /* Verwijder onderstreping van de links */
+              color: inherit; /* Gebruik de kleur van de bovenliggende elementen */
+            }
+          }
+        }
+      }
     
     @media (max-width: 480px) {
+      .midSecNav{
+        left: 43.5%; 
+
+      }
       }
     
       // Media Query for Medium Screens (min-width: 481px) and (max-width: 768px)
