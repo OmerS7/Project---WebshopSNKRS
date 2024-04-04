@@ -41,7 +41,7 @@ function HomePage() {
         <ImageSecondHome />
       </div>
       <div className={`card-home ${isCardVisible ? "active" : ""}`}>
-        <CardHome products={products.slice(0, 12)} />
+        <CardHome products={products.slice(7, 10)} />
       </div>
       <Footer />
     </div>
