@@ -7,8 +7,7 @@
     align-items: center;
     flex-direction: column;
     max-width: 100%;
-    margin-bottom: 100px;
-    margin-top: -100px;
+    margin-top: -150px;
     z-index: -2;
     position: relative;
 
@@ -17,7 +16,7 @@
       .logo {
           display: flex;
           position: absolute;
-          // margin-left: 50px;
+          margin-right: 10px;
           width: 750px;
       }
 
@@ -66,8 +65,9 @@
   }
 
   @media (max-width: 480px) {
+    overflow-x: hidden;
     margin-top: 50px;
-    margin-bottom: 240px; /* Grotere margin-bottom voor schermen van maximaal 480px */
+    margin-bottom: 40px; /* Grotere margin-bottom voor schermen van maximaal 480px */
 
 
       .containerHome .logo {
@@ -84,9 +84,16 @@
           margin-top: 10;
           margin-left: 0;
       }
+
+    //   .iconArrowDown {
+    //     margin-top: -400px;
+    //   }
   }
 
   @media (min-width: 481px) and (max-width: 768px) {
+    margin-top: -20px;
+    margin-bottom: 200px;
+
       .containerHome .logo {
           width: 100%;
           // margin-left: 0;
@@ -96,13 +103,16 @@
           width: 100%;
       }
 
+      
   }
 }
 
 .iconArrowDown {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 80px;
     animation: arrowBounce 2s infinite;
     opacity: 1;
     transition: opacity 2s; /* Voeg een overgang toe voor een vloeiende verandering van de opacity */

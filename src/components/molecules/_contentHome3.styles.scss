@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     // padding: 100px;
-    margin-top: 50px;
     z-index: -100;
   }
   
@@ -12,10 +11,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    // background-color: #000000;
     color: white;
-    box-shadow: 0px 0px 3px #00000080;
-    min-width: 100vw;
+    // box-shadow: 0px 0px 3px #00000080;
+    // min-width: 100vw;
     height: 500px;
   
     .shoe {
@@ -49,7 +48,8 @@
   
   @media (max-width: 480px) {
     .content-home {
-      // padding: 20px;
+      margin-top: 200px;
+      margin-bottom: 200px;
     }
   
     .card {
@@ -70,16 +70,18 @@
   
   @media (min-width: 481px) and (max-width: 768px) {
     .content-home {
+      max-width: 100%;
       padding: 50px;
     }
   
     .card .feel {
       font-size: 30px;
-      margin-left: 50px;
-      margin-right: 50px;
+      // margin-left: 50px;
+      // margin-right: 50px;
     }
   
     .card .shoe {
-      width: 70%;
+      padding-top: 40px;
+      width: 90%;
     }
   }
