@@ -6,7 +6,7 @@ import './_footer.styles.scss';
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>Design & Application made by Ömer</p>
+            <p>Webapp made by Ömer</p>
             <div className="footerSocials">
                 <div className='insta'>
                     <FontAwesomeIcon icon={faInstagram} />
