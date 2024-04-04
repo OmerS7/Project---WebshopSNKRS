@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Model1 from "../styles/img/nikeBlackDunk.png";
-import Model2 from "../styles/img/nikeAirMaxGreen.png";
+import Model1 from "../styles/img/AirJordan1Chicago.png";
+import ColorChicago from "../styles/img/ColorChicago.png";
+import Model2 from "../styles/img/JordanXTravisLow.png";
 import Model3 from "../styles/img/TravisScottJacket.png";
 import Model4 from "../styles/img/MJordan.png";
 import products from "../atoms/products/Products";
 import PngImage from "../atoms/Images/Image";
 import "./_contentHome2.styles.scss";
+import Text from "../atoms/Texts/Text";
 
 const ImageSecondHome = () => {
   useEffect(() => {
@@ -28,15 +30,36 @@ const ImageSecondHome = () => {
     };
   }, []);
 
+
+  const content = (
+    <>
+    In the late 1980s and early 1990s, one man not only transformed the world
+    <br />
+    of basketball but also revolutionized the sneaker industry. His name was 
+    <br />
+    Michael Jordan, and his influence on both sports and popular culture was unparalleled.
+    <br /> <br />
+    With his unmatched athletic skills, charismatic personality, and unique style 
+    <br />
+    on and off the court, Jordan quickly became a global sensation. But it wasn't just his game that captivated people; it was also his sneakers.    
+    </>
+  )
+
   return (
     <div>
       <div className="containerModel1">
+        <div className="textJordan">
+          <Text content={content} />
+         </div>
         <Link to={`/productdetail/${products[17].id}`}>
           <PngImage src={Model3} alt={"Model shoe"} className="model3" />
         </Link>          
-        <Link to={`/productdetail/${products[16].id}`}>
-          <PngImage src={Model1} alt={"Model shoe"} className="model1" />
-        </Link>
+        <div className="model1">
+          <Link to={`/productdetail/${products[16].id}`}>
+            <img src={Model1} alt="Model shoe" />
+            <img src={ColorChicago} alt="Model shoe" />
+          </Link>
+        </div>
         <Link to={`/productdetail/${products[14].id}`}>
           <PngImage src={Model2} alt={"Model shoe"} className="model2" />
         </Link>

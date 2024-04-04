@@ -2,86 +2,124 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px;
   z-index: -100000;
   // position: relative;
-
-  .model1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 440px;
-      transform: translate(-10000px);
-  }
-
-  .model2 {
-      display: flex;
-      margin-top: 300px;
-      margin-left: 50px;
-      width: 260px;
-      transform: translate(-10000px);
-  }
-
-  .model3 {
-      display: flex;
-      margin-top: 400px;
-      margin-right: 80px;
-      width: 220px;
-      transform: translate(-10000px);
-  }
-
-  .model4 {
-    display: flex;
-    // position: relative; /* Verander de positie naar relatief */
-    margin-bottom: 300px;
-    // margin-right: 0; /* Verwijder de grote margin-right */
-    width: 180px;
-    transform: translate(-10000px);
 }
+
+
+.textJordan {
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  animation: fadeInText 1s ease forwards;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.model1 {
+  position: relative;
+  width: 440px;
+  transform: translate(-10000px);
+}
+
+.model1 img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.model1 img:nth-child(2) {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.model1:hover img:nth-child(2) {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.model2 {
+  display: flex;
+  margin-top: 300px;
+  margin-left: 50px;
+  width: 260px;
+  transform: translate(-10000px);
+}
+
+.model3 {
+  display: flex;
+  margin-top: 400px;
+  margin-right: 80px;
+  width: 220px;
+  transform: translate(-10000px);
+}
+
+.model4 {
+  display: flex;
+  // position: relative; /* Verander de positie naar relatief */
+  margin-bottom: 300px;
+  // margin-right: 0; /* Verwijder de grote margin-right */
+  width: 180px;
+  transform: translate(-10000px);
 }
 
 @keyframes slideIn1 {
   0% {
-      opacity: 0;
-      transform: translate(-100%, 100%) rotate(90deg);
+    opacity: 0;
+    transform: translate(-100%, 100%) rotate(90deg);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0) rotate(0);
+    opacity: 1;
+    transform: translateY(0) rotate(0);
   }
 }
 
 @keyframes slideIn2 {
   0% {
-      opacity: 0;
-      transform: translate(-100%, -100%) rotate(90deg);
+    opacity: 0;
+    transform: translate(-100%, -100%) rotate(90deg);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0) rotate(0);
+    opacity: 1;
+    transform: translateY(0) rotate(0);
   }
 }
 
 @keyframes slideIn3 {
   0% {
-      opacity: 0;
-      transform: translate(100%, 100%) rotate(90deg);
+    opacity: 0;
+    transform: translate(100%, 100%) rotate(90deg);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0) rotate(0);
-      transform-origin: 0;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    transform-origin: 0;
   }
 }
 
 @keyframes slideIn4 {
   0% {
-      opacity: 0;
-      transform: translate(100%, -100%) rotate(90deg);
+    opacity: 0;
+    transform: translate(100%, -100%) rotate(90deg);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0) rotate(0);
-      transform-origin: 0;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    transform-origin: 0;
   }
 }
 
@@ -105,11 +143,10 @@
 @media (max-width: 480px) {
   .containerModel1 .model1,
   .containerModel1 .model2,
-  .containerModel1 .model3
-  {
-      width: 100%;
-      // margin: 10px;
-      transform: translateX(0);
+  .containerModel1 .model3 {
+    width: 100%;
+    // margin: 10px;
+    transform: translateX(0);
   }
 
   .containerModel1 .model1 {
@@ -131,17 +168,15 @@
 
   .containerModel1 .model4 {
     margin-left: -100px;
-
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .containerModel1 .model1,
   .containerModel1 .model2,
-  .containerModel1 .model3
-  {
-      width: 100%;
-      transform: translateX(0);
+  .containerModel1 .model3 {
+    width: 100%;
+    transform: translateX(0);
   }
 
   .containerModel1 .model1 {
@@ -159,16 +194,14 @@
     margin-right: -50px;
     margin-bottom: -100px;
   }
-  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .containerModel1 .model1,
   .containerModel1 .model2,
-  .containerModel1 .model3
-  {
-      width: 100%;
-      transform: translateX(0);
+  .containerModel1 .model3 {
+    width: 100%;
+    transform: translateX(0);
   }
 
   .containerModel1 .model1 {
