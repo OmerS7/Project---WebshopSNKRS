@@ -1,16 +1,33 @@
+@import 'variables';
+
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgb(23, 23, 23);
+  height: 800px;
+  max-width: 100vw;
+
+
 .containerModel1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
-  z-index: -100000;
+  // margin: 40px;
   // position: relative;
 }
 
 
 .textJordan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 400;
   opacity: 0;
   animation: fadeInText 1s ease forwards;
 }
@@ -28,7 +45,7 @@
 
 .model1 {
   position: relative;
-  width: 440px;
+  width: 340px;
   transform: translate(-10000px);
 }
 
@@ -56,7 +73,7 @@
   display: flex;
   margin-top: 300px;
   margin-left: 50px;
-  width: 260px;
+  width: 160px;
   transform: translate(-10000px);
 }
 
@@ -64,7 +81,7 @@
   display: flex;
   margin-top: 400px;
   margin-right: 80px;
-  width: 220px;
+  width: 120px;
   transform: translate(-10000px);
 }
 
@@ -141,6 +158,16 @@
 }
 
 @media (max-width: 480px) {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+
+  .textJordan{
+    font-size: 15px;
+
+  }
+
   .containerModel1 .model1,
   .containerModel1 .model2,
   .containerModel1 .model3 {
@@ -172,6 +199,13 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  .textJordan{
+    font-size: 15px;
+
+  }
   .containerModel1 .model1,
   .containerModel1 .model2,
   .containerModel1 .model3 {
@@ -180,12 +214,11 @@
   }
 
   .containerModel1 .model1 {
-    width: 180px;
     margin-right: -50px;
   }
 
   .containerModel1 .model2 {
-    width: 80px;
+    width: 120px;
     margin-right: -50px;
   }
 
@@ -194,9 +227,21 @@
     margin-right: -50px;
     margin-bottom: -100px;
   }
+
+  .containerModel1 .model4 {
+    width: 120px;
+    margin-left: -40px;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    padding: 100px; 
+    margin-bottom: 100px;
+  .textJordan{
+    font-size: 18px;
+  }
   .containerModel1 .model1,
   .containerModel1 .model2,
   .containerModel1 .model3 {
@@ -221,7 +266,13 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
+  display: flex;
+  flex-direction: column;
+  padding: 100px; 
+  margin-bottom: 100px;
 }
 
 @media (min-width: 1201px) {
+}
+
 }
