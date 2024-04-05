@@ -4,9 +4,9 @@ import NikeOfwhite from '../styles/img/nikeHomeOff.png'
 import ShadowLogo from '../styles/img/shadow-logo.png';
 import './_contentHome1.styles.scss';
 import PngImage from "../atoms/Images/Image";
-import Icon from "../atoms/Icons/Icon";
+// import Icon from "../atoms/Icons/Icon";
 import ArrowDown from "../styles/img/ArrowDown.svg";
-import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
+// import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 
 const ImageHome = () => {
     const [hideArrow, setHideArrow] = useState(false);
