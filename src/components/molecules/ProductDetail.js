@@ -60,14 +60,14 @@ const ProductDetail = () => {
   }, []);
 
   return (
-    <div>
+    <div className='contentDetail'>
       {showAlert && (
         <div className="alert">
           <img src={showAlert} alt="Product added to cart" className="alert-image" />
           <p>Added to cart</p>
         </div>
       )}
-    <div className="Header1">
+      <div className="Header1">
         <Header />
       </div>      
       <div className="productDetail">
@@ -84,7 +84,9 @@ const ProductDetail = () => {
         <div className="description">
           <Text content={product.description} />
         </div>
-        <DropdownMenu options={product.sizes} onSelect={setSelectedSize} />
+        <div className='dropdownMenu'>
+          <DropdownMenu options={product.sizes} onSelect={setSelectedSize} />
+        </div>
         <Button onClick={handleAddToCart} variant="tertiary" label={'Add to '} icon={faBagShopping} />
       </div>
       <Footer />
