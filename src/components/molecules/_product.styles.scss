@@ -1,3 +1,8 @@
+.contentDetail {
+  overflow-x: hidden;
+
+
+
 .Header1 {
   padding-bottom: 1px;
 }
@@ -94,4 +99,70 @@
   to {
     left: -220px;
   }
+}
+
+@media (max-width: 481px) {
+
+  .productDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80%; /* Maak de afbeelding volledig responsief binnen de container */
+      min-width: unset; /* Overschrijf de min-width om de beperking te verwijderen */
+      margin-right: 0; /* Verwijder de rechtermarge */
+    }
+
+    .detailHeading {
+      margin-bottom: 20px; /* Verminder de afstand onder de detailHeading */
+      margin-top: 50px;
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+
+    .buttonBack {
+      position: absolute;
+      margin-right: 350px;
+      margin-top: -40px;
+    }
+  }
+
+  .contentBottom {
+    flex-direction: column-reverse; /* Plaats de beschrijving en de dropdown onder de afbeelding en de knop */
+    align-items: center;
+    margin: 20px; /* Verminder de algemene marge */
+    padding: 50px;
+    height: auto; /* Maak de hoogte automatisch om inhoud te passen */
+
+      button{
+
+        margin-bottom: 20px;
+      }
+  }
+
+  .description {
+    margin-top: 20px;
+    width: 300px !important;
+    text-align: center; /* Centreer de beschrijving */
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .productDetail{
+    img {
+      max-width: 100px;
+    }
+  }
+}
 }
