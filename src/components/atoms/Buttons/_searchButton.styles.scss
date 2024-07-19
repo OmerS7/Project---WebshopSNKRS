@@ -7,6 +7,11 @@
         margin-left: 5px;
     }
 
+    .search-results-list {
+        max-height: 220px; /* Hier kun je de gewenste hoogte instellen */
+        overflow-y: auto;
+    }
+
     input{
         border-radius: 20px;
         background-color: rgba(95, 95, 95, 0.424);
@@ -34,7 +39,7 @@
 .SearchOptions{
     color: white;
     background-color: rgb(74, 74, 74);
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
 }
 
