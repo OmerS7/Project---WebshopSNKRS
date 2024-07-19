@@ -11,3 +11,14 @@
 // {/* <GifComponent src={Gif1} className="model4" /> */}
 
 // export default GifComponent;
+
+import React from 'react';
+import myGif from '../../styles/img/nikeLogo.gif';
+
+const Gif = () => {
+  return (
+    <img src={myGif} alt="Mijn GIF" />
+  );
+};
+
+export default Gif;
