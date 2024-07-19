@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import './_footer.styles.scss';
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 
 const Footer = () => {
     return (
@@ -18,7 +19,7 @@ const Footer = () => {
                    <FontAwesomeIcon icon={faYoutube} />                    
                 </div>
             </div>
-            <p>copyright Ömer</p>
+            <p><FontAwesomeIcon icon={faCopyright} />  Ömer Seker</p>
         </footer>
     );
 }
